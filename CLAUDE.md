@@ -28,3 +28,7 @@ Whenever a plugin is installed, removed, or changed, **always** update in the sa
 - Add each new plugin in its own file under `lua/plugins/<name>.lua`.
 - Do not edit NvChad's own files in `~/.local/share/nvim/lazy/NvChad`; override from this repo instead.
 - Verify startup after changes: `nvim --headless "+Lazy! sync" +qa`, then open nvim and check for errors.
+
+## Git commits
+
+- **Never add a `Co-Authored-By: Claude ...` trailer** (or any other AI attribution line) to commit messages or PR descriptions. Commits are authored by the repo owner only.

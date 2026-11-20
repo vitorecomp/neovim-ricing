@@ -2,6 +2,8 @@
 
 My personal Neovim setup.
 
+![vx86 dashboard](docs/images/dashboard.png)
+
 It is built on [NvChad](https://github.com/NvChad/NvChad) (through the official [starter config](https://github.com/NvChad/starter)) and will be customized to be fast for:
 
 - **Embedded systems development**
@@ -36,10 +38,14 @@ After that, set your terminal font to **JetBrainsMono Nerd Font** and open `nvim
 | `<space>as` | Send the visual selection (or the file under the cursor in nvim-tree) |
 | `<space>aa` / `<space>ad` | Accept / reject a diff proposed by Claude |
 
+## Dashboard
+
+The start screen (NvChad's nvdash) shows a **VX86** logo with a teal to yellow gradient. It lives in [`lua/vx86/dashboard.lua`](lua/vx86/dashboard.lua): edit `M.logo` for the text and `M.from` / `M.to` for the colors.
+
 ## Documentation
 
-- [Installed plugins](documentation/plugins.md)
-- [Fast commands](documentation/fast-commands.md): keymaps and commands for every plugin
+- [Installed plugins](docs/plugins.md)
+- [Fast commands](docs/fast-commands.md): keymaps and commands for every plugin
 
 ## Updating NvChad
 

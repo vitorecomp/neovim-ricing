@@ -2,6 +2,19 @@
 
 `<leader>` is **Space**. Press `<space>` and wait to see the which-key popup, or `<space>ch` to open the NvChad cheatsheet.
 
+## Dashboard (start screen)
+
+Shown when nvim opens without a file. `:Nvdash` opens it again.
+
+| Key | Action |
+|---|---|
+| `ff` | Find file |
+| `fo` | Recent files |
+| `fw` | Find word |
+| `ac` | Open Claude Code |
+| `th` | Themes |
+| `ch` | Mappings cheatsheet |
+
 ## General
 
 | Key / command | Mode | Action |

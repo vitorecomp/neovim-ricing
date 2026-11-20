@@ -14,7 +14,18 @@ M.base46 = {
 	-- },
 }
 
--- M.nvdash = { load_on_startup = true }
+-- vx86 dashboard (lua/vx86/dashboard.lua). header/buttons are functions so they
+-- replace NvChad's defaults instead of being deep-merged with them.
+M.nvdash = {
+  load_on_startup = true,
+  header = function()
+    return {}
+  end,
+  buttons = function()
+    return require("vx86.dashboard").buttons()
+  end,
+}
+
 -- M.ui = {
 --       tabufline = {
 --          lazyload = false
